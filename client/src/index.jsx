@@ -1,9 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Wrap from './components/wrap'
 
 ReactDOM.render(
-    <div>
-        <h1>Hello world</h1>
-    </div>,
+    <Wrap/>,
     document.getElementById('app')
-);
+)
