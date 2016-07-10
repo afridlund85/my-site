@@ -1,2 +1,2 @@
-# my-site
+# My site
 mine

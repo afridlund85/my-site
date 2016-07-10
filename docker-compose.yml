@@ -1,0 +1,23 @@
+version: '2'
+services:
+
+  nginx:
+    build:
+      context: .
+      dockerfile: nginx-Dockerfile
+    container_name: nginx
+    ports:
+      - 80:80
+    links:
+      - php7
+    volumes:
+      - ./api:/var/www/api
+      - ./client:/var/www/html
+
+  php7:
+    image: php:7.0-fpm
+    container_name: php7
+    expose:
+      - 9000
+    volumes:
+      - ./api:/var/www/api
