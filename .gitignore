@@ -1,19 +1,18 @@
-# Logs
 logs
 *.log
 npm-debug.log*
 
-# Runtime data
 pids
 *.pid
 *.seed
 *.pid.lock
 
-# Coverage directory used by tools like istanbul
 coverage
-
-# node-waf configuration
 .lock-wscript
 
-# Dependency directories
 node_modules
+
+vendor
+
+client/app.js
+client/css/style.min.css
