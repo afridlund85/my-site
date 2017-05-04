@@ -2,17 +2,4 @@ logs
 *.log
 npm-debug.log*
 
-pids
-*.pid
-*.seed
-*.pid.lock
-
-coverage
-.lock-wscript
-
 node_modules
-
-vendor
-
-client/app.js
-client/css/style.min.css
