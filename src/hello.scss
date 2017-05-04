@@ -1,0 +1,20 @@
+//Skeletor
+$dark: #020A2E;
+$medium: #00183E;
+$light: #6994F0;
+$purple: #45488B;
+$yellow: #F2EA7E;
+html {
+  margin:0;
+  padding:0;
+  body {
+    margin:0;
+    padding:0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: $dark;
+    background-color: $yellow;
+    h1,h2,h3,h4,h5,h6 {
+      font-family: 'Inknut Antiqua', serif;
+    }
+  }
+}

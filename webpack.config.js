@@ -1,7 +1,7 @@
 const { resolve, join } = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const ExtractTextPlugin = require("extract-text-webpack-plugin")
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   entry: [
@@ -13,7 +13,7 @@ module.exports = {
   output: {
     filename: 'app.js',
     path: resolve(__dirname, 'public'),
-    publicPath: '/'
+    publicPath: ''
   },
   module: {
     rules: [
@@ -30,8 +30,8 @@ module.exports = {
         })
       },
       {
-        test: /.(jpg|jpeg|png|gif|svg)$/,
-        use: 'file-loader'
+        test: /\.(jpe?g|png|svg)$/,
+        use: 'url-loader?limit=10000&name=[name]-[hash].[ext]&publicPath=&outputPath=assets/images/'
       }
     ]
   },
@@ -50,7 +50,7 @@ module.exports = {
   ],
   devServer: {
     contentBase: join(__dirname, 'public'),
-    publicPath: '/',
+    publicPath: '',
     port: 8080,
     host: '0.0.0.0',
     historyApiFallback: true,

@@ -4,6 +4,8 @@ import { AppContainer } from 'react-hot-loader'
 
 import Hello from './Hello'
 
+import './assets/css/normalize.css'
+
 const render = Component => {
   ReactDOM.render(
     <AppContainer>
