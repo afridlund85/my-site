@@ -17,7 +17,6 @@
   },
   "globals": {
     "document": false,
-    "API_URL": true,
   },
   "plugins": [
     "react"
