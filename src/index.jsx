@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 
-import Hello from './Hello'
+import Router from './Router'
 
 import './assets/css/normalize.css'
 
@@ -15,8 +15,8 @@ const render = Component => {
   )
 }
 
-render(Hello)
+render(Router)
 
 if (module.hot) {
-  module.hot.accept('./Hello', () => { render(Hello) })
+  module.hot.accept('./Router', () => { render(Router) })
 }
